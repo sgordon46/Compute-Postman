@@ -1,0 +1,681 @@
+{
+	"info": {
+		"_postman_id": "231875b2-0b55-4c5d-8851-79a95c61024f",
+		"name": "Compute",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/_ping",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2565fe84-112b-4f6c-925b-011981e58335",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{CONSOLE}}/_ping",
+					"host": [
+						"{{CONSOLE}}"
+					],
+					"path": [
+						"_ping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/scripts/defender.sh",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9fd90417-6a55-44ea-b240-a4b4148674fa",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{CONSOLE}}/scripts/defender.sh",
+					"host": [
+						"{{CONSOLE}}"
+					],
+					"path": [
+						"scripts",
+						"defender.sh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/settings/proxy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9cd5f8a0-9809-4b5f-b839-331005624ad6",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{CONSOLE}}/settings/proxy",
+					"host": [
+						"{{CONSOLE}}"
+					],
+					"path": [
+						"settings",
+						"proxy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/settings/proxy Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2a147a89-f0e8-4509-9e18-631543dbc8f6",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"httpProxy\":\"http://my.proxy\",\"noProxy\":\"\",\"ca\":\"\",\"user\":\"\",\"password\":{\"encrypted\":\"\"}}"
+				},
+				"url": {
+					"raw": "{{CONSOLE}}/settings/proxy",
+					"host": [
+						"{{CONSOLE}}"
+					],
+					"path": [
+						"settings",
+						"proxy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/settings/intelligence",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8fa03dc2-e5e7-4e78-927a-3dbecc688dc4",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{CONSOLE}}/settings/intelligence",
+					"host": [
+						"{{CONSOLE}}"
+					],
+					"path": [
+						"settings",
+						"intelligence"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/defenders/summary",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "473c7b98-c124-4586-8dda-221c93a7c5f0",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{CONSOLE}}/defenders/summary",
+					"host": [
+						"{{CONSOLE}}"
+					],
+					"path": [
+						"defenders",
+						"summary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/settings/serverless",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "473c7b98-c124-4586-8dda-221c93a7c5f0",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{CONSOLE}}/settings/serverless",
+					"host": [
+						"{{CONSOLE}}"
+					],
+					"path": [
+						"settings",
+						"serverless"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/policies/vulnerability/images",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "359e863c-bdcc-425f-ae44-8c8cba72cb6b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{CONSOLE}}/policies/vulnerability/images",
+					"host": [
+						"{{CONSOLE}}"
+					],
+					"path": [
+						"policies",
+						"vulnerability",
+						"images"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/policies/compliance/host",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b0840126-a615-475f-a9d7-be8b150305b5",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{CONSOLE}}/policies/compliance/host",
+					"host": [
+						"{{CONSOLE}}"
+					],
+					"path": [
+						"policies",
+						"compliance",
+						"host"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/policies/firewall/app/app-embedded",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "275f5615-7196-4bc8-bf70-02e2b5cf6ee0",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{CONSOLE}}/policies/firewall/app/app-embedded",
+					"host": [
+						"{{CONSOLE}}"
+					],
+					"path": [
+						"policies",
+						"firewall",
+						"app",
+						"app-embedded"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/policies/compliance/host Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "24825477-3a10-4bc5-92ee-71d5e3e18aef",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"rules\": [\n        {\n            \"effect\": \"alert\",\n            \"action\": [\n                \"*\"\n            ],\n            \"condition\": {\n                \"vulnerabilities\": [\n                    {\n                        \"id\": 16,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 200001,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 200002,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 200004,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 200005,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 200006,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 200007,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 200201,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 200202,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 200203,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 200400,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 200401,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 21,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 211,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 213,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 215,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 217,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 219,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 221,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 224,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 24,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 26,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 28,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 31,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 315,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 316,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 317,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 318,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 319,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 320,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 32,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 33,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 34,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 35,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 36,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 37,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 38,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6141,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6151,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6153,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 61612,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 61613,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 62110,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6216,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6218,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6219,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 62210,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 62211,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 62212,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 62213,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 62214,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 62216,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 62217,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6223,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6224,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6225,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6226,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6227,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6228,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6229,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6321,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6344,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6345,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6361,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 641113,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 64115,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 64116,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 64117,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 64118,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6412,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6518,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6521,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 65211,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6522,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6523,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6525,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6528,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6529,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 65414,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6612,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6613,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6614,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6615,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6616,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6617,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6618,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6619,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6621,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 66210,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 66213,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 66215,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 66216,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 66217,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 66218,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6625,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6627,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6628,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 6629,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8111,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 81111,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 81112,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8112,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 81120,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 81122,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 81123,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 81126,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 81127,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 81128,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 81129,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 81130,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 81131,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 81132,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 81133,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 81137,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 81138,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8114,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8115,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8116,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8117,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8118,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8133,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8134,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8135,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8136,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8141,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 81410,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 81411,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 81412,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 81413,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 81414,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 81417,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 81418,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 81419,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 81420,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8142,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 81421,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 81422,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 81423,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 81424,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 81425,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 81426,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 81427,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 81428,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 81429,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8143,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8144,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8145,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8146,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8147,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8148,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8149,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8151,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8152,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8153,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8154,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8155,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8156,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8211,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 82112,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 82113,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8212,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8213,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8214,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8215,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8223,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8224,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8225,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8226,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8227,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8228,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8229,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8230,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8231,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8232,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8233,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8234,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8311,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 83114,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 83117,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 83118,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 83119,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8313,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8314,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8315,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8316,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    },\n                    {\n                        \"id\": 8318,\n                        \"block\": false,\n                        \"minSeverity\": 1\n                    }\n                ]\n            },\n            \"blockMsg\": \"Please open a ticket at https://helpdesk.demobuild.org\",\n            \"principal\": [],\n            \"group\": [\n                \"*\"\n            ],\n            \"namespace\": [\n                \"*\"\n            ],\n            \"verbose\": true,\n            \"resources\": {\n                \"hosts\": [\n                    \"*\"\n                ],\n                \"accountIDs\": [\n                    \"*\"\n                ],\n                \"clusters\": [\n                    \"*\"\n                ],\n                \"labels\": [\n                    \"*\"\n                ]\n            },\n            \"allCompliance\": true,\n            \"onlyFixed\": false,\n            \"cveRules\": [],\n            \"tags\": [],\n            \"name\": \"demo_build - alert on critical and high\",\n            \"notes\": \"demo_build use only\"\n        },\n        {\n            \"name\": \"Default - alert on critical and high\",\n            \"effect\": \"alert\",\n            \"resources\": {\n                \"hosts\": [\n                    \"*\"\n                ],\n                \"accountIDs\": [\n                    \"*\"\n                ],\n                \"clusters\": [\n                    \"*\"\n                ],\n                \"labels\": [\n                    \"*\"\n                ]\n            },\n            \"condition\": {\n                \"readonly\": false,\n                \"device\": \"\",\n                \"vulnerabilities\": [\n                    {\n                        \"id\": 64118,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 441,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 62211,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 81428,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 65211,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 62210,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6619,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 83114,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 66215,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 81120,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6612,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 81129,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 81137,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 200400,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 320,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 65414,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 445,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8155,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 219,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 81132,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 61613,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 200401,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 81414,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8214,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 430,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6518,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 81422,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 83117,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8115,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8311,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 81122,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6625,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 317,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 81426,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 62110,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 318,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 81138,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 211,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 81425,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 319,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 434,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6321,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6223,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 224,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 316,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8134,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8234,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 83119,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8151,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6226,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6216,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6629,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 442,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8141,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6227,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8147,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8316,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6218,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6345,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 221,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 81427,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 427,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 62217,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 26,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 213,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 435,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 436,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 437,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6613,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 81412,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8314,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 447,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 200007,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 28,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 200001,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 21,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8111,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6617,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 37,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 32,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 439,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 62214,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8152,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 81111,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 81126,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8143,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8225,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 200004,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6224,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 66213,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8146,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 81410,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6614,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 66216,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8144,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 16,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 81418,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 429,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 62212,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 81413,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 81417,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 62213,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 444,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8135,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6344,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 34,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 446,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 81131,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 66210,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6225,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 200005,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 315,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8315,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8117,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8156,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8211,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 61612,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8227,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8313,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 64117,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 443,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8116,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6361,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8213,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6522,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8233,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8133,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8230,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 64115,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 217,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6151,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 100003,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8223,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 215,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8154,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 81133,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 200202,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 33,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8215,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 641113,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 36,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 81421,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8212,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8229,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6523,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 35,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6228,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8142,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 200203,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 81130,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8136,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 81424,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6528,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6529,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8114,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 81419,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6219,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 100001,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 433,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 62216,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6521,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 81127,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6412,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 200002,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 81429,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 83118,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6628,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8224,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 200006,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 81123,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6229,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8145,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 100013,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 82112,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8318,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6525,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 81420,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 66217,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 31,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8149,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8232,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 38,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8118,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 81128,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8228,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6141,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 64116,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8231,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6616,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 66218,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 431,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6153,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 82113,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6618,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 100002,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 81112,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8153,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8226,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6621,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 24,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 200201,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 81423,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 81411,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6615,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8112,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 8148,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 432,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    },\n                    {\n                        \"id\": 6627,\n                        \"block\": false,\n                        \"minSeverity\": 0\n                    }\n                ]\n            },\n            \"alertThreshold\": {\n                \"disabled\": false,\n                \"value\": 0\n            },\n            \"blockThreshold\": {\n                \"enabled\": false,\n                \"value\": 0\n            },\n            \"graceDays\": 0\n        }\n    ],\n    \"policyType\": \"hostCompliance\",\n    \"_id\": \"hostCompliance\",\n    \"type\": \"compliance\",\n    \"policyContext\": \"host\"\n}"
+				},
+				"url": {
+					"raw": "{{CONSOLE}}/policies/compliance/host",
+					"host": [
+						"{{CONSOLE}}"
+					],
+					"path": [
+						"policies",
+						"compliance",
+						"host"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/policies/vulnerability/images",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f68cff6c-c072-4f43-a487-d23cf7ae87a9",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"rules\": [\n        {\n            \"owner\": \"system\",\n            \"name\": \"ATO-FrontEnd\",\n            \"notes\": \"Images within the CI build process label ato:ATO-FrontEnd\",\n            \"effect\": \"alert, block\",\n            \"resources\": {\n                \"hosts\": [\n                    \"*\"\n                ],\n                \"images\": [\n                    \"*\"\n                ],\n                \"labels\": [\n                    \"ato:ATO-FrontEnd\"\n                ],\n                \"containers\": [\n                    \"*\"\n                ],\n                \"namespaces\": [\n                    \"*\"\n                ],\n                \"accountIDs\": [\n                    \"*\"\n                ],\n                \"clusters\": [\n                    \"*\"\n                ]\n            },\n            \"action\": [\n                \"*\"\n            ],\n            \"condition\": {\n                \"readonly\": false,\n                \"device\": \"\",\n                \"vulnerabilities\": []\n            },\n            \"group\": [\n                \"*\"\n            ],\n            \"blockMsg\": \"This container is not allowed to start due to ATO-FrontEnd vulnerability policy.\",\n            \"alertThreshold\": {\n                \"disabled\": false,\n                \"value\": 1\n            },\n            \"blockThreshold\": {\n                \"enabled\": true,\n                \"value\": 1\n            },\n            \"tags\": [\n                {\n                    \"effect\": \"ignore\",\n                    \"name\": \"ATO-FrontEnd-Mitigating_Controls\",\n                    \"description\": \"Ignore mitigating controls for 1 yr\",\n                    \"expiration\": {\n                        \"enabled\": true,\n                        \"date\": \"2021-07-02T07:00:00Z\"\n                    }\n                },\n                {\n                    \"effect\": \"ignore\",\n                    \"name\": \"ATO-FrontEnd-POAM\",\n                    \"description\": \"Ignore POAMed vulnerabilities for 6 months\",\n                    \"expiration\": {\n                        \"enabled\": true,\n                        \"date\": \"2021-01-02T08:00:00Z\"\n                    }\n                }\n            ],\n            \"disabled\": true\n        },\n        {\n            \"effect\": \"alert\",\n            \"action\": [\n                \"*\"\n            ],\n            \"condition\": {\n                \"vulnerabilities\": []\n            },\n            \"blockMsg\": \"Please open a ticket at https://helpdesk.demobuild.org\",\n            \"principal\": [],\n            \"group\": [\n                \"*\"\n            ],\n            \"namespace\": [\n                \"*\"\n            ],\n            \"verbose\": true,\n            \"resources\": {\n                \"containers\": [\n                    \"*\"\n                ],\n                \"images\": [\n                    \"*\"\n                ],\n                \"hosts\": [\n                    \"*\"\n                ],\n                \"labels\": [\n                    \"product:Sock Shop\"\n                ],\n                \"namespaces\": [\n                    \"*\"\n                ],\n                \"accountIDs\": [\n                    \"*\"\n                ],\n                \"clusters\": [\n                    \"*\"\n                ]\n            },\n            \"allCompliance\": false,\n            \"onlyFixed\": false,\n            \"cveRules\": [],\n            \"tags\": [],\n            \"alertThreshold\": {\n                \"value\": 1,\n                \"disabled\": false\n            },\n            \"blockThreshold\": {\n                \"value\": 0,\n                \"enabled\": false\n            },\n            \"name\": \"demo_build - Product Sock Shop\",\n            \"notes\": \"demo_build use only\"\n        },\n        {\n            \"owner\": \"system\",\n            \"name\": \"Default - ignore Twistlock components\",\n            \"effect\": \"alert\",\n            \"resources\": {\n                \"hosts\": [\n                    \"*\"\n                ],\n                \"images\": [\n                    \"*twistlock/defender*\",\n                    \"*twistlock/console*\"\n                ],\n                \"labels\": [\n                    \"*\"\n                ],\n                \"containers\": [\n                    \"*\"\n                ],\n                \"namespaces\": [\n                    \"*\"\n                ],\n                \"accountIDs\": [\n                    \"*\"\n                ],\n                \"clusters\": [\n                    \"*\"\n                ]\n            },\n            \"action\": [\n                \"*\"\n            ],\n            \"condition\": {\n                \"readonly\": false,\n                \"device\": \"\",\n                \"vulnerabilities\": []\n            },\n            \"group\": [\n                \"*\"\n            ],\n            \"alertThreshold\": {\n                \"disabled\": false,\n                \"value\": 7\n            },\n            \"blockThreshold\": {\n                \"enabled\": false,\n                \"value\": 0\n            },\n            \"cveRules\": [],\n            \"graceDays\": 0\n        },\n        {\n            \"name\": \"demo_build - alert all components\",\n            \"notes\": \"demo_build use only\",\n            \"effect\": \"alert\",\n            \"resources\": {\n                \"hosts\": [\n                    \"*\"\n                ],\n                \"images\": [\n                    \"*\"\n                ],\n                \"labels\": [\n                    \"*\"\n                ],\n                \"containers\": [\n                    \"*\"\n                ],\n                \"namespaces\": [\n                    \"*\"\n                ],\n                \"accountIDs\": [\n                    \"*\"\n                ],\n                \"clusters\": [\n                    \"*\"\n                ]\n            },\n            \"action\": [\n                \"*\"\n            ],\n            \"condition\": {\n                \"readonly\": false,\n                \"device\": \"\",\n                \"vulnerabilities\": []\n            },\n            \"group\": [\n                \"*\"\n            ],\n            \"blockMsg\": \"Please open a ticket at https://helpdesk.demobuild.org\",\n            \"verbose\": true,\n            \"alertThreshold\": {\n                \"disabled\": false,\n                \"value\": 1\n            },\n            \"blockThreshold\": {\n                \"enabled\": false,\n                \"value\": 0\n            },\n            \"graceDays\": 0\n        },\n        {\n            \"owner\": \"system\",\n            \"name\": \"Default - alert all components\",\n            \"effect\": \"alert\",\n            \"resources\": {\n                \"hosts\": [\n                    \"*\"\n                ],\n                \"images\": [\n                    \"*\"\n                ],\n                \"labels\": [\n                    \"*\"\n                ],\n                \"containers\": [\n                    \"*\"\n                ],\n                \"namespaces\": [\n                    \"*\"\n                ],\n                \"accountIDs\": [\n                    \"*\"\n                ],\n                \"clusters\": [\n                    \"*\"\n                ]\n            },\n            \"condition\": {\n                \"readonly\": false,\n                \"device\": \"\",\n                \"vulnerabilities\": []\n            },\n            \"alertThreshold\": {\n                \"disabled\": false,\n                \"value\": 0\n            },\n            \"blockThreshold\": {\n                \"enabled\": false,\n                \"value\": 0\n            },\n            \"graceDays\": 0\n        },\n        {\n            \"name\": \"demo_build - Ignore All\",\n            \"notes\": \"demo_build use only\",\n            \"effect\": \"ignore\",\n            \"resources\": {\n                \"hosts\": [\n                    \"*\"\n                ],\n                \"images\": [\n                    \"*\"\n                ],\n                \"labels\": [\n                    \"*\"\n                ],\n                \"containers\": [\n                    \"*\"\n                ],\n                \"namespaces\": [\n                    \"*\"\n                ],\n                \"accountIDs\": [\n                    \"*\"\n                ],\n                \"clusters\": [\n                    \"*\"\n                ]\n            },\n            \"action\": [\n                \"*\"\n            ],\n            \"condition\": {\n                \"readonly\": false,\n                \"device\": \"\",\n                \"vulnerabilities\": []\n            },\n            \"group\": [\n                \"*\"\n            ],\n            \"alertThreshold\": {\n                \"disabled\": true,\n                \"value\": 0\n            },\n            \"blockThreshold\": {\n                \"enabled\": false,\n                \"value\": 0\n            },\n            \"graceDays\": 0\n        }\n    ],\n    \"policyType\": \"containerVulnerability\",\n    \"_id\": \"containerVulnerability\",\n    \"type\": \"vulnerability\",\n    \"policyContext\": \"images\"\n}"
+				},
+				"url": {
+					"raw": "{{CONSOLE}}/policies/vulnerability/images",
+					"host": [
+						"{{CONSOLE}}"
+					],
+					"path": [
+						"policies",
+						"vulnerability",
+						"images"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/settings/serverless",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "473c7b98-c124-4586-8dda-221c93a7c5f0",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"provider\": \"aws\",\n        \"region\": \"us-east-1\",\n        \"pattern\": \"\",\n        \"useAWSRole\": false,\n        \"credential\": {\n            \"_id\": \"AWS\"\n        },\n        \"cap\": 50\n    }\n]"
+				},
+				"url": {
+					"raw": "{{CONSOLE}}/settings/serverless",
+					"host": [
+						"{{CONSOLE}}"
+					],
+					"path": [
+						"settings",
+						"serverless"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/settings/serverless-auto-protect",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "29839191-3429-4ab2-ac70-2e84486f0eb4",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\n    \"name\": \"Protect2\",\n    \"region\": \"us-east-1\",\n    \"consoleAddr\": \"<CONSOLE-NAME\",\n    \"useAWSRole\": false,\n    \"credentialID\": \"<CREDENTIAL-NAME\",\n    \"roleArn\": \"\",\n    \"resource\": {\n        \"functions\": [\n            \"12345\"\n        ]\n    },\n    \"runtimes\": [\n        \"*\"\n    ]\n}]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{CONSOLE}}/settings/serverless-auto-protect",
+					"host": [
+						"{{CONSOLE}}"
+					],
+					"path": [
+						"settings",
+						"serverless-auto-protect"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "473c7b98-c124-4586-8dda-221c93a7c5f0",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{CONSOLE}}/users",
+					"host": [
+						"{{CONSOLE}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "policies/compliance/container",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f761f734-19c6-4688-a5d0-8b170d2ea81a",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{CONSOLE}}/policies/compliance/container",
+					"host": [
+						"{{CONSOLE}}"
+					],
+					"path": [
+						"policies",
+						"compliance",
+						"container"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "policies/compliance/host",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8edfa2c3-084c-4124-b40b-9b6e050768ce",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{CONSOLE}}/policies/compliance/host",
+					"host": [
+						"{{CONSOLE}}"
+					],
+					"path": [
+						"policies",
+						"compliance",
+						"host"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "policies/compliance/ci/images",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "af65cf35-6093-4333-8283-83720af3ebef",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{CONSOLE}}/policies/compliance/ci/images",
+					"host": [
+						"{{CONSOLE}}"
+					],
+					"path": [
+						"policies",
+						"compliance",
+						"ci",
+						"images"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{AUTH-TOKEN}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "606bb0da-abed-4c53-a71d-9d1510844f48",
+				"type": "text/javascript",
+				"exec": [
+					"var gatewayBaseUrl = pm.environment.get('CONSOLE');",
+					"var username = pm.environment.get('USERNAME');",
+					"var password = pm.environment.get('PASSWORD');",
+					"",
+					"var sdk = require('postman-collection');",
+					"",
+					"var isValidTokenRequest = new sdk.Request({",
+					"    url: gatewayBaseUrl + \"/settings/intelligence\", // Use an endpoint that requires being authenticated",
+					"    method: 'GET',",
+					"    header: [",
+					"        new sdk.Header({",
+					"            key: 'content-type',",
+					"            value: 'application/json',",
+					"        }),",
+					"        new sdk.Header({",
+					"            key: 'acccept',",
+					"            value: 'application/json',",
+					"        }),",
+					"        new sdk.Header({",
+					"            key: 'Authorization',",
+					"            value: 'Bearer ' + pm.globals.get(\"AUTH-TOKEN\"),",
+					"        }),",
+					"    ]",
+					"});",
+					"",
+					"pm.sendRequest(isValidTokenRequest, function (err, response) {",
+					"    if (response.code === 401) {",
+					"        refreshToken();",
+					"    }",
+					"});",
+					"",
+					"function refreshToken() {",
+					"    var tokenRequest = new sdk.Request({",
+					"    url: gatewayBaseUrl + \"/authenticate\",",
+					"    method: 'POST',",
+					"    header: [",
+					"        new sdk.Header({",
+					"            key: 'content-type',",
+					"            value: 'application/json'",
+					"        }),",
+					"        new sdk.Header({",
+					"            key: 'acccept',",
+					"            value: 'application/json'",
+					"        }),",
+					"    ],",
+					"    body: {",
+					"        mode: 'raw',",
+					"        raw: JSON.stringify({",
+					"            username: username,",
+					"            password: password",
+					"        })",
+					"    } ",
+					"  });",
+					"",
+					"  pm.sendRequest(tokenRequest, function (err, response) {",
+					"      if (err) {",
+					"          throw err;",
+					"      }",
+					"      ",
+					"      if (response.code !== 200) {",
+					"          throw new Error('Could not log in.');",
+					"      }",
+					"      ",
+					"      pm.globals.set(\"AUTH-TOKEN\", response.json().token);",
+					"      console.log(`New token has been set: ${response.json().token}`);",
+					"  });",
+					"}"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "87af9d0e-624e-4d57-8b3c-407667f21165",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
